@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be inspired</title>
+</head>
+<body>
+  
+  <! --- Menu button ---> 
+  <div class="button_container" id="toggle" style="display:none">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+  </div>
+
+  <! --- When open the menu button ---> 
+  <div class="overlay" id="overlay">
+    <nav class="overlay-menu">
+      <ul>
+        <li><a href="index.html">Be inspired</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+        <li><a href="affirmations.html">Affirmations</a></li>
+        <li><a href="about.html">About page</a></li>
+      </ul>
+    </nav>
+  </div>        
+  
+  <!-- The parent component -->
+  <div class="curtain">
+    
+    <!-- The component wrapper -->
+    <div class="curtain__wrapper">
+      <input class="checkbox" type="checkbox" checked>
+      
+      <!-- The left curtain panel -->
+      <div class="curtain__panel curtain__panel--left">
+        <h1>BECOME</h1>
+      </div> <!-- curtain__panel -->   
+      
+      <div class="curtain__content"> 
+        <div class="flexboxcontainer">
+          <h1 id="typewriter"></h1>
+        </div>
+      </div>
+      
+      <!-- The right curtain panel -->
+      <div class="curtain__panel curtain__panel--right">
+        <h1>INSPIRED</h1>        
+      </div> <!-- curtain__panel -->
+      
+    </div> <!-- curtain__wrapper -->
+
+  </div> <!-- curtain -->        
+  <script src="https://rawgit.com/Ashish-Bansal/jquery-typewriter/master/jquery.typewriter.js" defer=""></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script  src="script.js"></script>  
+</body>
+</html>
